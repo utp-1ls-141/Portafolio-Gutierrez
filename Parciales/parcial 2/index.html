@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plantilla</title>
+
+    <link rel="stylesheet" href="./statics/vendor/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-dark bg-dark"  id="menu_superior">
+                <a class="navbar-brand" href="#">Parcial 2</a>
+        </nav>
+    </header>
+
+    <!-- Cuerpo -->
+
+    <div class="container-fluid">
+            <div class=row>
+                <div class="col-sm-8 offset-sm-2">
+                    <hr>
+                    <div class="form-group">
+                        <label for="num1">Número</label>
+                        <input type="number" class="form-control" id="num1" placeholder="Escribe un Número">
+                    </div>
+                    <button type="submit" onclick="crear_Mat()" class="btn btn-primary">Crear Matriz</button>
+                </div>
+            </div>
+
+            <div class=row>
+                <div class="col-sm-8 offset-sm-2">
+                    <hr>
+                    <div class="form-group">
+                        <label for="numR">Rotaciones</label>
+                        <input type="number" class="form-control" id="numR" placeholder="Escribe un Número">
+                    </div>
+                    <button type="submit" onclick="verRotacion()" class="btn btn-primary">Ver Rotaciones</button>
+                </div>
+            </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="mod2" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Matriz</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p id="matriz" class="text-center"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div id="mod4" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Matriz</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p id="rota"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-copyright text-center bg-dark text-white py-3 fixed-bottom">
+        <span>2018. Isaac Quinzada | 1LS-141 </span>
+    </footer>
+
+    <!-- Scripts  -->
+    <script src="./statics/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="./statics/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./statics/js/main.js"></script>
+    <script src="./statics/js/main_bonus.js"></script>
+    
+</body>
+</html>

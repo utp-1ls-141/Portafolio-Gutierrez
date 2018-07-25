@@ -1,0 +1,42 @@
+extends base.pug
+block contenido
+    // CUERPO
+    #sliderimg.carousel.slide(data-ride='carousel')
+        .carousel-inner
+            .carousel-item.active
+                img.d-block.w-100(src='/img/test1.jpg', alt='First slide')
+            .carousel-item
+                img.d-block.w-100(src='/img/test2.jpg', alt='Second slide')
+            .carousel-item
+                img.d-block.w-100(src='/img/test3.jpg', alt='Third slide')
+        a.carousel-control-prev(href='#sliderimg', role='button', data-slide='prev')
+            span.carousel-control-prev-icon(aria-hidden='true')
+            span.sr-only Atrás
+        a.carousel-control-next(href='#sliderimg', role='button', data-slide='next')
+            span.carousel-control-next-icon(aria-hidden='true')
+            span.sr-only Siguiente
+    br
+    .container-fluid
+        div
+            center
+                h3 ¡LO MÁS POPULAR!
+                hr
+        .row-center
+            .col-sm-3
+                h5 Elef Note
+                a(href='#')
+                    img(src='img/logoapp.png', width='100px', height='100px')
+            .col-sm-3
+                h5 Alkemist Animator
+                a(href='#')
+                    img(src='img/logoapp2.png', width='100px', height='100px')
+            .col-sm-3
+                h5 Destiny Search
+                a(href='#')
+                    img(src='img/logoapp3.png', width='100px', height='100px')
+            .col-sm-3
+                h5 Space Invader 3000
+                a(href='#')
+                    img(src='img/logoapp4.jpg', width='100px', height='100px')
+    br
+    br
