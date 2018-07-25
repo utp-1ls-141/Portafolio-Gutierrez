@@ -1,0 +1,16 @@
+#cuerpo{
+    background-image: url("thanos.jpg"); 
+    width:670px; 
+    height:410px; 
+    opacity: 1;
+    transition: 1s ease-in;
+}
+
+#cuerpo:hover{
+    background-image: url("deadpool.jpg");
+    
+    width:670px; 
+    height:410px;
+    transition: 1s ease-in;
+    /* opacity: 0.75; */
+}

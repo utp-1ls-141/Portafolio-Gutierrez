@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="ventor/css/bootstrap.css">
+    <title>Laboratorio Iso</title>
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Tarea: Isomorfica</a>
+        </nav>
+    </div>
+    <br>
+    <center><div class="row">
+        <div class="container">
+            <br>
+            <h1>Palabra Isomórfica</h1>
+            <fieldset>
+                <form id="cuadro">
+                    <table>
+                        <td>
+                        <div class="form-group">
+                        <h4 id="h4left">Palabra 1</h4>
+                        <input type="text" class="form-control" id="iso1" placeholder="Escriba la primera palabra">
+                        </div>
+                        <div class="form-group">
+                        <h4 id="h4left">Palabra 2</h4>
+                        <input type="text" class="form-control" id="iso2" placeholder="Escriba la segunda palabra">
+                        </div>
+                        <button id="btn-green" onclick="isomorfica()" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Comparar</button>
+                        </td>
+                        <td>
+                        <img src="gif/justdoit.gif" id="gifjust" width="400px" height="300px">
+                        </td>  
+                    </table>
+                </form>
+            </fieldset>
+        </div>
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                                    <h4 class="modal-title" id="myModal-label">Resultado</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        <div class="mbody"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div></center>
+
+    <script  src="ventor/jquery/jquery-3.3.1.min.js"> </script>
+    <script src="ventor/js/bootstrap.js"></script>
+    <script src="funcion_iso.js"></script>
+</body>
+</html>
